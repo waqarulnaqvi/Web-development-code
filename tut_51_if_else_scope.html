@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div>ul>li{Item-$}*7 -Enter -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1="This is a string";
+        var string1="This is a string2";//It doesn't produce error.
+        // var scope is global
+        // let scope is a block level scope
+        console.log(string1);
+        let a="u";
+        {//It is a block.
+        let a="v";//variable scope is only inside the block.
+        console.log(a);
+        }
+        // let a="e";//It produce error.
+        console.log(a);
+        console.log(a);
+
+        const b="This cannot be changed";
+        // print(b); It again show in the screen to print the code.
+        console.log(b)
+        // b="This cannot be changed";//Error Uncaught TypeError: Assignment to constant variable.
+  
+        // Conditional statement
+        // if else ladder:
+        //javascript ignores semicolon syntax mistake.
+        let age=4;
+        if (age>=18){
+            console.log("you can drink")
+        }
+        else if(age==4){
+            console.log("age is 4")
+        }
+        else{
+            console.log("you can drink cold drink")
+        }
+// 1:03
+        // Switch case statements:
+    
+    const cups=45
+    // cups=23; //caught TypeError: Assignment to constant variable.
+
+    switch (cups) {
+        case 45:
+            console.log("The value of cups is 45")
+            break;
+        case 4:
+            console.log("The value of cups is 2345")
+            break;
+        case 5:
+            console.log("The value of cups is 4235")
+            break;
+        case 23:
+            console.log("The value of cups is 234")
+            break;
+    
+        default:
+        console.log("The value of cups is none")
+            break;
+    }
+    </script>
+</body>
+</html>
+<!-- 12 39 -->

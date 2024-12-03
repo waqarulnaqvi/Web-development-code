@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+                let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" //#bhindiLoverSquad
+        } 
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);//With the help of Json we can convert objects into the string.(IT is useful when we are sending nested object through the network)
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr)
+
+        newJsonObj = JSON.parse(myJsonStr);
+        // Converting back string into the object to decode it.
+        console.log(newJsonObj)
+
+        // We can use json is a data format that provide utility to convert object into string ,array etc. we can use json parsing in most of the programming language such as c,c++,javascript &python etc. 
+    </script>
+</body>
+</html>

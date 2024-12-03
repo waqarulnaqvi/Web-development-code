@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <script type="text/Javascript">
+        /*Question 1. Write a driven program in JavaScript having following options:
+        1. read length and breadth of rectangle and use  function rectarea() print area of rectangle.
+        area of rectangle=length * breadth
+
+        2. read three sides of a triangle and use the   function triarea() print area of triangle.
+        s=(a+b+c)/2
+        area=squareroot(s*(s-a)(s-b)(s-c))
+    
+        3. read the side of a square and use function sqarea  () print area of a square.
+        area of triangle:
+        area of square=square of side*/
+
+    function rect_area(){
+        let a=parseInt(prompt("Enter the length:",8))
+        let b=parseInt(prompt("Enter the Breadth:",9))
+document.write(`<h3>The area of rectangle is </h3> :23
+${a*b}`)
+    }
+
+    function tarea()
+{
+    
+    let a=parseInt(prompt("Enter side1",21));
+    let b=parseInt(prompt("Enter side2",12));   
+    let c=parseInt(prompt("Enter side3",27));
+ let s=(a+b+c)/2;    
+    let area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+    
+    document.write("Area of Triangle is = "+area);
+}
+function sarea()
+{
+    let a=parseInt(prompt("Enter square side",9));
+    document.write("Area of square="+(a*a));
+
+}
+function main()
+{
+    alert("which area you want to find \n 1)Rectangle area \n 2)Triangle area \n 3) Square area")
+    let ch =parseInt(prompt("Enter your choice",1));
+    switch(ch)
+    {
+        case 1:
+            rect_area();
+        break;
+            case 2:
+             tarea();
+        break;
+             case 3:
+            sarea();
+break;
+default:
+    document.write("invalid choice")
+    }
+}
+// Question 2. Write a program in JavaScript to show uses of break and continue statements in a looping statement.
+// Break
+for (var index = 1; index < 5; index++) {
+     document.write(`Value of i is ${index}<br>`)
+    if (index==3)
+    {
+    document.write("Breaking the loop<br><br>")
+    break;
+    }
+}
+
+// continue
+for(let i=0;i<5;i++)
+{
+    
+    if (i==3)
+    {
+    document.write("Continue the loop<br>")
+    continue;
+    }
+    document.write(`Value of i is ${i}<br>`)
+}
+    </script>
+<style>
+    h3{
+        display: inline;
+        color:rgb(47, 19, 207);
+    }
+</style>
+</head>
+<body>
+   <script type="text/Javascript">
+    main()
+   </script>
+</body>
+</html>

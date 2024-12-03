@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+<style>
+    *{
+        border-radius: 40px;
+    }
+.container{
+    background-color: rgb(189, 197, 76);
+    border:3px solid brown;
+    width: 455px;
+    margin: 34px auto;
+    padding: 34px;
+    
+
+}
+a{
+    text-decoration: none;
+    /* It removes the underline from the anchor tag. */
+}
+a:hover{
+    color:black;
+    background-color: red;
+
+}
+button:hover{
+    background-color: green;
+    color: rgb(0, 0, 0);
+}
+.btn{
+    background-color: rgb(26, 219, 74);
+    font-family: cursive;
+    border:2px solid;
+    color: rgb(0, 0, 0);
+    /* border-radius: 8px; */
+    margin: 14px ;
+    padding: 4px;
+    cursor: pointer;
+    font-size: small;
+}
+a:visited{
+    /* you can click on this link and it will work then it color will be change or a:visited will work otherwise not. */
+    color: rgb(243, 66, 17);
+    background-color: black;
+}
+button:visited{
+   /* visited won't work on button */
+    color: rgb(243, 66, 17);
+    background-color: black;
+}
+a:active{
+    color: darkblue;
+}
+button:active{
+    color: darkblue;
+}
+button:visited{
+    color: blue;
+}
+.ktm{
+    background-color: rgb(215, 72, 72);
+}
+</style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellat culpa eius aut, ea reiciendis. Amet mollitia, praesentium alias nemo itaque fuga veniam recusandae ab sed nam incidunt fugit, ea doloremque, est inventore commodi.</p>
+    <a href="https://www.google.com/" target="_blank_" class="btn ktm">Read more</a>
+    <button class="btn  ">Contact us</button>
+        </div>
+</body>
+</html>

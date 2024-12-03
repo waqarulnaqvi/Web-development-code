@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(100, 232, 181);
+    height: 5000px;
+}
+hr{
+    border:6px solid rgb(0, 0, 255);
+}
+h2{
+    color: rgb(235, 8, 201);
+    padding: 23px;
+}
+.heading{
+    padding: 23px;
+    color:brown;
+}
+.container{
+    text-align: center;
+    width: 750px;
+    padding: 12px ;
+margin: 23px auto; 
+    background-color:skyblue;
+    border: 4px solid;
+    border-radius: 12px;
+}
+span{
+    background-color: rgb(19, 218, 240);
+}
+table{
+    width: 750px;
+    height: 400px;
+    color:red;
+    background-color: brown
+}
+
+thead{
+    
+background-color: rgb(230, 201, 56);
+}
+
+tbody{
+background-color: rgb(235, 241, 49);
+}
+

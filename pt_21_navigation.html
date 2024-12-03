@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+.navbar{
+    background-color: rgb(83, 80, 80);
+    border-radius: 40px ;
+}
+.navbar li{
+    float: left;
+    /* whenever we float anything then it will be overflow from it's parent. */
+    list-style: none;
+margin: 13px 20px;
+
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar li a:hover{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: blue;
+}
+.navbar li a:active{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(25, 137, 212);
+}
+/* .navbar li a:visited{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: green;
+    background-color: rgb(212, 87, 25);
+} */
+
+.navbar ul{
+    overflow: auto;
+
+    /* overflow: hidden; */
+}
+.search{
+    color: rgb(20, 16, 16);
+    float: right;
+    padding: 5px 50px;
+}
+.navbar input{
+    border: 3px solid black;
+    border-radius: 12px;
+    /* padding: 13px; */
+    width: 355px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href=""> Home </a></li>
+                <li><a href=""> About </a></li>
+                <li><a href=""> Services </a></li>
+                <li><a href=""> Contact us </a></li>
+                <div class="search"><input type="text" class="search" id="search" placeholder="Search the content of this website"></div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

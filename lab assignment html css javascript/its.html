@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 9 58 -->
+    <form action="index.php" name="form" method="POST">
+        <input type="number" id="number1" name="number1" required>
+        <input type="number" id="NUMBER2" name="NUMBER2" required>
+        <button type="submit">  find largestnumbers</button>
+    </form>
+    
+<?php
+$a=$_POST['number1'];
+$b=$_POST['NUMBER2'];
+
+echo max($a,$b);
+?>
+
+</body>
+</html>

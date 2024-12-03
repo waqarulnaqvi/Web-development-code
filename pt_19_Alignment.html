@@ -1,0 +1,115 @@
+<!-- 7:24 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet"> I
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zeyada&display=swap" rel="stylesheet">
+<!--It is a google font family.  -->
+    <style>
+        *{
+            /* It is a universal tag */
+            box-sizing: border-box;
+        }
+        /* body{
+            font-family: 'Zeyada', cursive;
+        } */
+        body{
+            font-family: 'Kaushan Script', cursive;
+             font-family: 'Zeyada', cursive;
+        }
+.container{
+    background-color: brown;
+width: 900px;
+border:3px solid purple;
+margin: 33px auto;
+/* margin: y x; */
+/* margin: auto; */
+/* if you want to set any box/container to the center then you have to set margin:auto or x is auto because margin is auto property.*/
+}
+.item{
+    border :3px solid gray;
+    border-radius: 20px;
+    /* padding: 20px;
+    margin:20px; */
+    padding: 12px 3px;
+    margin:12px 3px;
+    background: rgb(249, 130, 130);
+
+}
+ #fruit{
+    float: left;
+    width: 48%;
+
+} 
+#computer{
+    float: left;
+    width: 48%;
+
+}
+#stationary{
+    /* float: left; */
+    /* clear: left;  */  /* no float left element is allowed to overlap */
+    clear: both;
+    width: 100%;
+
+} 
+#glass{
+    width: 70%;
+}
+p,h3{
+    text-align:right;
+    text-align: center;/*
+    It overlap the previous text aligned property*/
+    text-align: justify;
+}
+h1{
+  margin: 23PX  auto;
+  width: 455PX;
+    width: 40%;
+   background-color: aquamarine;
+    /* float: right; */
+    border: 3px solid yellow;
+    border-radius: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+     <div class="item" id="fruit">
+        <h3>Fruits</h3>
+    <p id="fr" class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure at eius sit iste eos ea vero ex maiores, corrupti porro provident consequuntur dolorem nam? Deleniti ipsam obcaecati fuga commodi.
+    </p>
+     </div>
+
+     <div class="item" id="computer">
+        <h3>Computers</h3>
+    <p id="co" class="para"></p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore illum debitis blanditiis, dolorum officia atque in, at impedit, ipsum cum deleniti reprehenderit perspiciatis magnam vero nemo est reiciendis eligendi alias.
+     </div>
+
+     <div class="item" id="stationary">
+        <h3>Stationary</h3>
+    <p id="st" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facere earum eligendi repudiandae, debitis consequatur dolor nesciunt nobis saepe nemo neque quibusdam suscipit possimus, quas autem obcaecati, eveniet reprehenderit aperiam!
+    </p>
+     </div>
+     <div class="item" id="glass">
+        <h3>Glasses</h3>
+    <p id="gp" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facere earum eligendi repudiandae, debitis consequatur dolor nesciunt nobis saepe nemo neque quibusdam suscipit possimus, quas autem obcaecati, eveniet reprehenderit aperiam!
+    </p>
+     </div>
+    </div>
+</body>
+</html>

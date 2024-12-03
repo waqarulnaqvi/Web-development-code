@@ -1,0 +1,64 @@
+<!-- 10 29 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z index</title>
+    <style>
+        .box{
+            width: 170px;
+            border: 2px solid;
+            height: 170px;
+        }
+        #box-1{
+            /* position: relative; */
+            /* z index will only work on the posiitioned element so if the position is not set and it is default then the z-index won't work. */
+            z-index: -11;
+            background-color: red;
+            /* visibility: visible; */
+            /* default value of visibility is visible.*/
+        }
+        #box-2{
+            /* display: none; */
+            /* It will hide the box as well as remove the space that the box had taken. */
+            /* visibility: hidden; */
+            /* visibility hidden will hide the box but show the space that the box had taken. */
+       
+            background-color: blue;
+        }
+        #box-3{
+            position: relative;
+            /* z index will work on the relative,absolute,fixed,or sticky position. */
+            top: 94px;
+            background-color: rgb(27, 225, 70);
+        z-index: 50;
+        }
+        #box-4{
+            position: relative;
+            /* default postion is static in this postion z index will not work. */
+            top: 59px;
+            /* z index will work on the relative,absolute,fixed,or sticky position. */
+            background-color: rgb(251, 255, 0);
+            /* the element which has more z-index will overlap the other */
+            z-index: -1;
+            /* If you want that any element should not overlap other element then make the z index of that element negative. */
+            /* z-index will only work on the positioned element. */
+        }
+        body{
+            background-image: url("download.png");
+            /* position: relative; */
+            /* z-index: 123; */
+        }
+    </style>
+</head>
+<body>
+    <!--   div.box#box-$*4 -->
+    <!-- The above code will give the below output   -->
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+</body>
+</html>

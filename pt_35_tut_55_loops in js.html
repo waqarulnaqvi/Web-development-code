@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+<style>
+    h2{
+        color: purple;
+        position: relative;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="con">
+        <h1>This is all about loops!!</h1>
+        
+    </div>
+    <script>
+      
+        // for (let i = 0; i < 5; i++) {
+        //  document.write(i);
+            
+        // }
+
+        let element;
+        let array=["naqvi","akvi","takvi","lakvi",null,true,23,false,"true23",undefined];
+        // for loop
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            document.write(`<h2>${element}</h2><br>`);  
+        }
+
+        // for each loop
+        // array.forEach(function func_name(element){
+        //   document.write(`"Hello friend," ${element} to modern javascript <br>`)
+        //   console.log(`"Hello friend," ${element} to modern javascript`)
+        // });
+        // document.write("<br>")
+
+        // for of loop
+        // for(element of array){
+        //     document.write(`"Hello friend," ${element} to modern javascript <br>`)
+        //     console.log("Hello Friend, "+element+" to modern Javascript")
+        // }
+        // document.write(element);
+
+        // for in loop
+        let employee={
+            name:"Harry",
+            salary:2,
+            channel:"CWH"
+        }
+
+        // Use this loop to iterate over objects in javascript
+        for(key in employee)
+        {
+                        document.write(`"Hello friend," ${key} to modern javascript <br>`)
+        }
+
+        // while and do while in javascript is same as java.
+</script>
+</body>
+</html>

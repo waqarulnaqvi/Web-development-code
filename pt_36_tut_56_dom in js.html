@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- .cont>#id-$.main{<h3>waqrul_practice-$</h3>}*5 -->
+    <div class="cont" id="45">
+        <div id="id-1" class="main">
+            <h3>waqrul_practice-1</h3>
+        </div>
+        <div id="id-2" class="main">
+            <h3>waqrul_practice-2</h3>
+        </div>
+        <div id="id-3" class="main">
+            <h3>waqrul_practice-3</h3>
+        </div>
+        <div id="id-4" class="main">
+            <h3>waqrul_practice-4</h3>
+        </div>
+        <div id="id-5" class="main">
+            <h3>waqrul_practice-5</h3>
+        </div>
+    </div>
+    <script>
+        // console.log("hello")
+        // 12 37
+        // DOM in js
+        // nav.innerHTML="<li>dynamic</li>"
+        // you can do it on console.
+let main=document.getElementById('id-1')
+console.log(main)
+let nav=document.getElementById('45')
+// console.log(nav)
+let cls=document.getElementsByClassName('main')
+// console.log(cls)
+// you can access it by the array technique.
+
+// css Selector:
+let sel=document.querySelector('.container');
+let sel1=document.querySelector('.main');
+
+let sel2=document.querySelector('#id-5>h3')
+console.log("Selector returns ",sel2)
+
+let sel5=document.querySelectorAll('.cont>div>h3')
+console.log("Selector returns ",sel5)
+
+// sel5[0].innerHTML="inserted"
+// you can manipulate it in command prompt using this array technique.
+
+
+</script>
+</body>
+</html>

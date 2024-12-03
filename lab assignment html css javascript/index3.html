@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index 3</title>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script type="text/Javascript">
+   function validate_form(){
+       // let name=document.form.user.value;
+       let name=document.getElementById('name').value;
+       // let name=document.getElementsByClassName('name').value;
+       // let password=document.getElementsByClassName('psd').value;
+       let pas=document.getElementsByTagName('input').value;
+alert(pas)
+       let password=document.form.pwd.value;
+       if(name=null ||name==""){
+           alert("User name Required!!")
+       return false;
+       }
+       else if(password.length<6)
+       {
+           alert("Minimum 6 character password is permitted!!")
+           return false;
+       }
+       else{
+           alert("You have successfully login to the system!!")
+           return true;
+       }
+   }
+</script>
+</head>
+<body>
+
+<h1><span class="head">User</span > login </h1>    <h1><span class="head">User</span > login </h1>
+   
+       <form action="" name="form" >
+<label for="name">Name:</label>
+<input type="text" class="name" name="user" id="name" placeholder="Enter your name">
+
+<label for="password">Password:</label>
+<input type="text" name="pwd" id="password"  class="psd" placeholder="Enter your password">
+
+<button  type="submit" onclick="return validate_form()">Submit now</button>
+<!-- disabled="#" -->
+
+   </form>
+
+<script type="text/Javascript">
+   
+   let typingEffect =new Typed(".head",{strings:["Admin","Student","User"]
+,loop:1,typeSpeed:100,backSpeed:100,backDelay:1500});
+
+</script>
+</body>
+</html>

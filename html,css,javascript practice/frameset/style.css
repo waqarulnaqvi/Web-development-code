@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+tbody{
+    background-color: white;
+}
+.cont{
+    border: 2px solid ;
+    width: 60%;
+    margin: auto;
+background-color: azure;
+}

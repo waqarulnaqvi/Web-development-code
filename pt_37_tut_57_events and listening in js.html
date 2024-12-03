@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.btn{
+    border: 2px solid red;
+    background-color:skyblue;
+    font-weight: bold;
+border-radius: 10px;
+padding: 4px;
+margin: auto;
+margin-top: 23px;
+cursor: pointer;
+
+}
+    </style>
+</head>
+<body>
+    <h2>This is a heading</h2>
+    <div class="cont" id="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit corrupti. Praesentium assumenda corporis reprehenderit dolores beatae culpa debitis neque incidunt molestiae. Architecto esse similique dolorum voluptatibus quae voluptas magni beatae nobis, laborum dolorem ab. Dolore laboriosam incidunt ex assumenda. Nobis rem fugiat ea sit? Commodi delectus neque, quaerat totam beatae molestias eligendi hic. Consequuntur neque natus dolorum placeat officia saepe pariatur maiores atque ipsa at a ratione eius libero, alias assumenda eligendi expedita ut, quasi, odio labore et aliquam! Consequatur dolorem cumque at sed dolores est, asperiores numquam neque quos minus rem cupiditate doloribus autem! Id sunt explicabo tempora distinctio quod optio, aperiam dolorem nesciunt delectus aspernatur illo totam reiciendis eius ad, quas ullam mollitia officia. Quidem facilis eligendi saepe!
+    </div>
+<button class="btn" onclick="toggle_hide()"> show/hide</button>
+
+    <script>
+        // let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            // alert("MOUSE inside PARA");
+            // document.read("MOUSE INSIDE PARA");
+            console.log("MOUSE INSIDE PARA");
+        });
+        
+        para.addEventListener('mouseout',function run(){
+            // alert("MOUSE outside PARA");
+        //    document.read( "MOUSE outside PARA");
+           console.log( "MOUSE outside PARA");
+        });
+function toggle_hide()
+{
+    // let btn=document.getElementsByClassName('btn');//global variable which takes para and id by default.
+    // console.log(btn)
+    // let para=3;//you can override the global variable id and para.
+    if(para.style.display!='none')
+    {
+    para.style.display='none';
+    }
+    else
+    {
+        para.style.display="block";
+    }
+}
+    </script>
+</body>
+</html>

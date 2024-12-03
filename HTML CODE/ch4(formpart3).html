@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div>
+     <h1>Travel form for our trip</h1>
+     <form action="form.php">        
+         <input type="text" name="name" id="name" placeholder="Enter Your Name"> <br>
+         <label for="sectionida">
+         <input type="radio" placeholder="Section" value="section a" name="section" id="sectionida">chutiya
+        </label> 
+        <!-- agar do radio button ya 3 ka naam same hota hai to unme se at a time ek hi click hoga -->
+        <label for="sectionidb"><!-- method 1 -->
+            <input type="radio" placeholder="Section" value="section b" name="section" id="sectionidb">chutiya do number ka
+        </label> <br>
+        <!-- id means unique identifier -->
+           <!-- backend me kya hai aapka element yeah pehchane ka apka backend name se  -->
+           <!-- class is like house in school e.g.:-red ,blue etc
+           we can use to class by giving space
+           e.g.;- class= "red blue"  -->
+        <input type="checkbox"  id="foodCanteen "class="red blue" name="canteen"><!--method 2 -->
+        <label for="foodCanteen ">Canteen</label> <br> <!--for=id it increase the user experience(means search engine optimization)-->
+        <!-- for must have the same id because of ths we can click on name and tick the column -->
+        <textarea name="explain" id="explain" cols="30" rows="10" placeholder="explain why you want to join"></textarea>
+        <!-- we can use same name for name,id their is no problem in it   -->
+        <select name="car" id="car">
+            <option value="select option">Select your car</option>
+            <option value="sports car">buggarti</option> <!--you should always write value in lower case but if you write in upper case there is no problem-->
+            <option value="luxurious car ">rolles royles</option>
+        </select>
+     </form>
+ </div>   
+</body>
+</html>

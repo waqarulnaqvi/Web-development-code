@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+            /* text-align: center;             */
+            /* width: 10%; */
+            display: inline-block;
+            margin-left: 70%;
+        }
+    </style>
+</head>
+<body>
+    <!-- .cont>p>{This is a container} -->
+    <div class="cont">
+        
+      <span id="time"></span>
+      <p>This is a container</p>
+    </div>
+    <script>
+        console.log("hyyyy")
+    //  settimeout --> Allow us to run the function once after the interval of time. 
+    //   cleartimeout --> Allow us to run the function repeatedly after the interval of time. 
+    function greet(name){
+        document.write("Hello Good Morning "+name);
+    }
+   to= setTimeout(greet,2000,"Harry");
+   
+   console.log(to)//it give unique id
+   clearTimeout(to)
+  
+console.log("Hello")
+  Interval_id= setInterval(greet,3000,"WAqarul")//This will run this function in every 1 second
+console.log(Interval_id)
+    clearInterval(Interval_id)
+
+// 1h 15 min
+// 2 17
+// 2 59
+// 1h 55 min
+
+function display_time()
+{
+    time =new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(display_time,10);
+    </script>
+</body>
+<script>
+
+</script>
+</html>

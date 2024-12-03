@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="pt_12.css"><!--External css-->
+    <style>
+        p{/*Internal css  */
+            color: brown !important;
+            /* Important increases it's precident and makes it as a highest precident.*/
+            background-color: rgb(14, 241, 109);
+        }
+        /* If we write internal css after external css than internal css priority increases and it override the external css but if we write important tag in external css then its priority increases and vice versa. */
+        </style>
+</head>
+<body>
+    <!-- External css has same priority as internal css but externl and internal css has  less priority than inline css. Inline css has the highest priority.-->
+    
+    <h3>This is css Tutorial</h3>
+        <!-- It is not recommended to use inline css use internal and external css by cwh. -->
+   
+        <p style="color:red !important; background-color : yellow ;" >This Tutorial will teach you everything you need to know about html/css.</p>  <!--Inline css-->
+  
+        <p >This Tutorial will teach you everything you need to know about html/css.</p>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        margin: 34px;
+        border: 2px solid red;
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 8px;
+        text-align: center;
+        background-color: bisque;
+        padding: 56px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><strong>Current time is :</strong> <span id="tim"></span></p>
+    <div class="cont">This is a container</div>
+    <span id="time" class="time"></span>
+
+    <!-- 5 23 -->
+    <script>
+      // setInterval(update_time,1000);
+
+      // function update_time(){
+      //     time.innerHTML=new Date();
+      // }
+
+      function display_time() {
+        time = new Date();
+        console.log(time);
+        document.getElementById("tim").innerHTML = time;
+      }
+      setInterval(display_time, 10);
+
+      console.log("This is date and time tutorial");
+      now = new Date();
+      console.log(now);
+      let ms = new Date(100000000000000);
+      console.log(ms);
+      let ref = new Date(0);
+      console.log(ref);
+      now = new Date("2029-09-30");
+      console.log(now);
+      // now =new Date(year,month,date,hours,minutes,seconds,milliseconds);
+      now = new Date(3020, 4, 5, 6, 6, 2, 34); //It is a constructor in javascript
+      console.log(now);
+      let yr = now.getFullYear();
+      console.log("The year is ", yr);
+
+      let dt = now.getDate();
+      console.log("The date is ", dt);
+
+      let month = now.getMonth();
+      console.log("The month is ", month);
+
+      let hours = now.getHours();
+      console.log("The hours is ", hours);
+
+      let day = now.getDay();
+      console.log("The day is ", day);
+
+      console.log(now);
+      now.setDate(80);
+      console.log(now);
+
+      now.setMinutes(75);
+      console.log(now);
+
+      now.setHours(75);
+      console.log(now);
+
+      console.log(Date.now()); //current timestamp is 1684757025060.
+      // It defined as how many milliseconds is passed since 1970.
+      // UTC IS A LONDON TIMEZONE
+    </script>
+  </body>
+</html>

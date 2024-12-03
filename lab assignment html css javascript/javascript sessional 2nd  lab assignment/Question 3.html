@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with a control statement</title>
+    <script type="text/Javascript">
+function largest(a,b,c)
+{
+    if(a>b && a>c)
+    return (a);
+    else if(b>a && b>c)
+    return b;
+    else
+    return c;
+}
+    </script>
+</head>
+<body bgcolor="green" text="yellow">
+    <h2><center>Finding Largest number among three inputted number</center></h2>
+<!-- <script type="text/Javascript">
+    let x=parseInt(prompt("Enter first number:"))
+    let y=parseInt(prompt("Enter second number:"))
+    let z=parseInt(prompt("Enter third number:"))
+    document.write(`<h1>Largest of three numbers= ${largest(x,y,z)}</h1>`);
+</script> -->
+
+<script>
+    // let x=parseInt(prompt("Enter a number"))
+    // alert("Madavrchoood")
+    // confirm("Do you want to continue?")
+
+    function validate(){
+        // let name=document.form.name.value;
+        // let password=document.form.psw.value;
+        // if(name=null ||name==""){
+        //     alert("User name Required!!")
+        // return false;
+        // }
+        // else if(password.length<6)
+        // {
+        //     alert("Minimum 6 character password is permitted!!")
+        //     return false;
+        // }
+        // else{
+        //     alert("You have successfully login to the system!!")
+        //     return true;
+        // }
+
+    let nm=document.form.name.value;
+    let pss=document.form.psw.value;
+    if(name==null ||name=="")
+    {
+           alert("User name Required!!")
+    }
+    else if (password.length<6)
+    {
+                  alert("Minimum 6 character password is permitted!!")
+            return false;
+    }
+      else{
+            alert("You have successfully login to the system!!")
+            return true;
+        }
+    }
+</script>
+<form action="" name="form">
+    <div>
+    <label for="name" >Name:</label>
+    <input type="text" name="name" id="name"> <br>
+</div>
+<div>
+    <label for="password">Password:</label>
+    <input type="number" name="psw" id="pwd" required>
+</div>
+    <input type="submit" onclick="return validate()" value="Submit now" >
+</form>
+
+
+</body>
+</html>

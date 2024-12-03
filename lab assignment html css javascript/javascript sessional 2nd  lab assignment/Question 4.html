@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome number</title>
+</head>
+<body bgcolor="pink" text="brown">
+    <script type="text/JavaScript">
+    function palindrome(num)
+    {
+        let n=parseInt(num);
+        let rev=0;
+        var p;
+        while(n)
+        {
+            rem=n%10;
+            // document.write(rem);
+            rev=(rev*10)+rem;
+            n=Math.trunc(n/10);
+            // n=Math.floor(n/10);
+            // Math.trunc()-->returns the integer part of a number by removing any fractional digits.
+        }
+        if (num==rev) {
+            document.write("<center><h1>Inputted number is a palindrome</h1></center>")
+            
+        }
+        else{
+            document.write("<center><h1>Inputted number is  not a palindrome</h1></center>")
+        }
+    }
+    let n=parseInt(prompt("Enter a number:",11));
+    palindrome(n);
+
+    </script>
+    
+</body>
+</html>

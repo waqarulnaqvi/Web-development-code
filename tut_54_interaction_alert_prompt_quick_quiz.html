@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm prompt</title>
+</head>
+<body bgcolor="skyblue" 
+color="yellow">
+    <!-- div>ul>li{Item-$}*7 -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        /*Alert:*/
+//Alert in in-browser JavaScript.
+//console.log(alert(3434)) //return value is undefined.
+//alert("this is a message")
+// Alert does'nt return anything.
+// alert take number, string etc as an argument 
+//alert open the modale window that means until it be clicked ok, the page won't be further executed.
+// boatstrap is a framework that has a modale.
+
+/*Prompt:
+a=prompt("What is your name?","User")//"User" will take as an input in prompt by default. 
+
+//a=prompt("What is your name?","")//"If you don't want to enter any value by default then enter a blank space it is a good practice and Internet explorer always want a default argument.
+
+console.log(a)
+12:11*/
+/*Confirm:(when we want to double check something then we use confirm).
+
+let deletePost= confirm("do you really want to delete this post?");
+console.log(deletePost);
+
+if(!deletePost)
+{
+    console.log("Your post has not been deleted!!");
+}
+else if(deletePost)
+{
+    console.log("Your post has been deleted successfully!!")
+}*/
+    </script>
+    <script>
+        //Quick quiz
+       age=prompt("Enter your age?");
+       if(age<18){
+        document.write("<h2>Your age is below 18</h2>");
+       } 
+       else{
+        document.write("You are allowed in a club!!");
+       }
+    </script>
+</body>
+</html>

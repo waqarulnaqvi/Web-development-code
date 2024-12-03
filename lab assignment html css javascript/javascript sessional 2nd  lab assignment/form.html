@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is html forms tutorial</h2>
+    <form action="backend.php" name="value"> <!--Example yeah saara data backend.php me store ho jaayega.-->
+        <!-- input tag is a spanic inline element -->
+        <!-- div tag is a block element -->
+        <!-- div means division -->
+        <!-- br is not recommend by cwh he said that try to avoid use br tag as possible -->
+        <div>
+
+        <label for="name">Name: </label>
+         <input type="text" name="Myname" id="name">
+        </div>
+        <br>
+
+        <label for="nam">Label practice</label>
+        <input type="text" id="nam" name="madarchood">
+
+        <br>
+        <div>
+            <label for="myRole">Role:</label>
+             <input type="text" name="Role" id="myRole">
+        </div>
+        <br>
+
+        <div><!--we can write e in a number section because in mathematics e means 10 to the power something.-->
+             
+            Roll: <input type="number" name="myRoll">    
+        </div>
+        <br>
+
+        <div> 
+            email: <input type="email" name="myEmail">
+        </div>
+        <br>
+      <div>
+        practice date: <input type="date" name="date">
+      </div>
+<br>
+        <div> 
+            date: <input type="date" name="date" id="">
+        </div>
+        <br>
+
+
+        <div> 
+            date time local: <input type="datetime-local" name="dtl" id="">
+        </div>
+        <br>
+
+        <div> 
+            date time: <input type="datetime" name="dt" id="">
+        </div>
+        <br>
+
+        <input type="datetime-local">
+        Are u Eligible? yes<input type="radio" name="yes" >
+        NO<input type="radio" name="yes" >
+        <div> 
+            <label for="cb">Are you not Eligible?:</label>
+         yes<input type="checkbox" name="myEligiblity"id="cb" aria-checked="">
+         no<input type="checkbox" name="myEligiblity"id="cb" aria-checked="">
+        </div>
+        <br>
+
+        <div> 
+            Are you Eligible ?: <input type="checkbox" name="myEligiblity"  id="" checked>
+            <!-- checked ensure that this box is already checked in a form or bydefault checked in a form -->
+        </div>
+        <br>
+
+        <div> 
+            Gender: male<input type="radio" name="myEligiblity" > female<input type="radio" name="myEligiblity" >
+            other<input type="radio" name="myEligiblity" >
+        </div>
+        <br>
+
+        <select name="mycar" id="car">
+            <option value="ind">Indica</option>
+            <option value="ind" selected>Ina</option>
+        </select>
+        <div>
+            <label for="car">Car</label> 
+        <select name="mycar" id="car">
+        <option value="ind">Indica</option>
+        <option value="swf" selected >Swift</option>
+        <!-- selected will automatically select the option like checked will automatically checked an option in a checkedbox.-->
+        </select>
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" id="" cols="50" rows="6"></textarea>
+        </div>
+        <br>
+
+        <!-- name is method to take myEmail in backend -->
+        <div>
+            <input type="submit" value="submit now" onclick="">
+            <input type="reset" value="Reset now">
+        </div>
+       
+    
+    </form>
+</body>
+
+</html>

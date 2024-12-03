@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids and classes in html</title>
+    
+</head>
+<body>
+    <!-- 7 :04 -->
+    <h3>Ids and classes tutorial</h3>
+    <div id="mainbox" class="redBg blackborder">this is mainbox</div>
+    <span class="redBg">this is span</span>
+    <!-- Emment 
+    . is for class (span.redbg +enter = <span class="redbg"></span>)
+
+    # is for id (span#redbg +enter = <span id="redbg"></span>)
+    
+    (div.redbg.blackborder.anotherclass#alpha.beta#gamma +enter = <div class="redbg blackborder anotherclass beta" id="gamma"></div>)
+    (div.redbg.blackborder.anotherclass#alpha.beta + enter = <div class="redbg blackborder anotherclass beta" id="alpha"></div> )
+
+-->
+    <span class="redbg"></span>
+    <div class="redbg blackborder anotherclass beta" id="gamma">I am a container</div>
+    <div class="redbg blackborder anotherclass beta" id="alpha">I am a container</div>
+    <!-- Emmet takes div tag as default:
+       (.blackBand + enter = <div class="blackBand"></div> )-->
+    <div class="blackBand">I am the blackBand class</div>
+
+    <!-- Crating multiple elements using Emmet
+     (span.myclass.myclass2.myclass3*3 +Enter/Tab to print 4 similar elements using Emmet )
+     <span class="myclass myclass2 myclass3"></span><span class="myclass myclass2 myclass3"></span><span class="myclass myclass2 myclass3"></span>
+    -->
+    <span class="myclass myclass2 myclass3" style="border: 2px solid brown;">First</span><span class="myclass myclass2 myclass3" style="border: 2px solid brown;">second</span><span class="myclass myclass2 myclass3" style="border: 2px solid brown;">Third</span>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <p><strong>Current time is :</strong> <span id="time"></span></p>
+    <div class="cont">This is arrow function</div>
+    
+    <script>
+// Arrow function:
+let greet=()=>{
+    time.innerHTML=new Date();
+    // console.log("Good morning")
+}
+let greet_m=()=>{
+    console.log("Good morning mr naqvi!!")
+}
+let greet_u=()=> console.log("Good morning 420")
+        // function greet()
+        // {
+        //     console.log("Good morning")
+        // }
+
+        greet()
+        greet_u()
+        greet_m()
+       setTimeout(()=>{
+            now=new Date();
+        },1000)
+
+        let sum=(a,b)=>{
+           return a+b;
+        };
+        let sum2=(a,b)=> a+b;
+        let half=a=>a/2;
+
+       console.log(sum(3,5));
+       console.log(sum2(9,5));
+
+       document.write(sum(3,5),"<br>");
+       
+       document.write(sum2(9,5),"<br>");
+       document.write(half(5))
+       document.write(half(2))
+
+       let obj1={
+        greeting:"Good Morning",
+        names:["Harry","Rohan","SkillF","Djkhiladi"],speak(){
+this.names.forEach((student)=>{
+    console.log(this.greeting+"\tkhukdoo koo" +student);
+})}}// this means the object but only the arrow function find/points the object outside the function
+//normal function finds the value of "this" inside the function (by default) many people called it also as an lexical this.
+
+       var obj={
+        greeting:"Good Morning",
+        names:["Harry","Rohan","SkillF","Djkhiladi"],speak(){
+this.names.forEach(function s (student){
+    console.log(this.greeting+"\tghutki koo" +student);
+})}}// this means the object but only the arrow function find/points the object outside the function
+//normal function finds the value of "this" inside the function (by default) many people called it also as an lexical this.
+    
+       obj1.speak();
+       obj.speak();
+    </script>
+</body>
+
+</html>
